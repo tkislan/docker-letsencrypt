@@ -1,1 +1,1 @@
-15 3 * * * /usr/bin/certbot renew --quiet --renew-hook "docker exec nginx nginx -s reload"
+15 3 * * * /usr/bin/certbot renew --quiet --post-hook "docker exec nginx nginx -s reload"
